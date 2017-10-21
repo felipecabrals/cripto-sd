@@ -1,5 +1,13 @@
 <?php
-session_start();
+	session_start();
+	if ( $_SESSION['usuarioNiveisAcessoId'] == 2)
+	{
+		// Exibe a tela HTML
+	}
+	else
+	{ 
+		header("Location: index.php"); // direciona para login (index.php)
+	}
 ?>
 
 <!DOCTYPE html>
